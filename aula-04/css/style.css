@@ -1,0 +1,110 @@
+body {
+    display: grid;
+    grid-template-areas: 'navbar'
+        'banner'
+        'main'
+        'section'
+        'contact'
+        'footer';
+
+    grid-template-columns: 100%;
+    margin: 0;
+}
+div img{
+    width: 32px;
+}
+
+nav {
+    grid-area: navbar;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+nav 
+
+
+nav img {
+    width: 85px;
+}
+
+nav div:nth-child(2) {
+    display: none;
+
+}
+
+nav div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    height: 20px;
+}
+
+header {
+    grid-area: banner;
+    background-image: url(../fotos/cachorro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#cabecalho {
+    grid-area: main;
+    background-color: #00FF80;
+}
+
+#cabecalho h1, #cabecalho h2 {
+    text-align: center;
+    color: #000000;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+
+}
+
+.subtitulo {
+    width: 350px;
+}
+
+
+@media (max-width: 800px) {
+    nav div:nth-child(2) {
+        display: inline-block;
+        width: 100px;
+    }
+
+
+    nav div:nth-child(3) {
+        display: none;
+    }
+
+
+}
+
+
+.icon-burguer {
+    width: 55%;
+}
+
+header {
+    display: flex;
+}
