@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    grid-template-areas: 'navbar'
+        'banner'
+        'main'
+        'section'
+        'contact'
+        'footer';
+
+        grid-template-columns: 100%;
+        margin: 0;
+}
+
+
+#barra_verde {
+    height:10px ;
+    width: 100% ;
+    background-color: #32dc32;
+}
+
+header {
+    display: flex;
+    grid-area: banner;
+    background-image: url(../imagens/banner.png.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  
+}
+
+.titulo {
+    position: relative;
+    color: white;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    
+   
+
+}
+
+.subtitulo {
+    position: relative;
+    color: white;
+}
