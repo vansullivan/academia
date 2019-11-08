@@ -39,11 +39,46 @@ console.log(comprarPao())
     comprarPao();
 */
 
+
+/*
 let material = "#";
 for (i = 0; i < 5; i ++){
+    escada =  material + material
     console.log(material + i)
 
 }
+*/
+
+/*
+let escada = "#"
+for (i = 0; i <5; i ++) {
+    escada += 
+    console.log (escada)
+}
+*/
+
+
+/*
+let material = prompt ("Qual material você quer")
+let qtDegraus = Number(prompt("Quantos degraus você quer?"))
+let material = "#"
+    for (i = 0; i <5; i ++) {
+        escada +=
+        console.log(escada+i)
+
+    }
+
+*/
+
+let material = prompt ("Qual material você quer");
+let qtDegraus = Number(prompt("Quantos degraus você quer?"));
+let escada = ""
+for (i = 0; i <5; i++) {
+    escada += material
+    console.log (escada)
+}
+
+
 
 
 
